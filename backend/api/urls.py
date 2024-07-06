@@ -1,12 +1,13 @@
 from django.urls import path
-from .views import WalletDetailView, DepositView, WithdrawView, ConvertCurrencyView, CurrencyListView
+from .views import WalletDetailView, DepositView, WithdrawView, CurrencyListView, ConvertCurrencyView, ExchangeRateListView
 
 urlpatterns = [
     path('wallet/', WalletDetailView.as_view(), name='wallet-detail'),
     path('wallet/deposit/', DepositView.as_view(), name='wallet-deposit'),
     path('wallet/withdraw/', WithdrawView.as_view(), name='wallet-withdraw'),
-    path('wallet/convert/', ConvertCurrencyView.as_view(), name='wallet-convert'),
     path('currencies/', CurrencyListView.as_view(), name='currency-list'),
+    path('convert/', ConvertCurrencyView.as_view(), name='convert_currency'),
+    path('exchange-rates/', ExchangeRateListView.as_view(), name='exchange-rate-list'),
 
 ]
 #These paths are used for interacting with the backend.

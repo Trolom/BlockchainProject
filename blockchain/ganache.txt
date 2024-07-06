@@ -1,0 +1,3 @@
+Starting command for ganache with funding account
+
+ganache-cli --mnemonic "Dragos" --accounts 1 --defaultBalanceEther 1000 --db ./ganache.db

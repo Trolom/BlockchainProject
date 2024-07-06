@@ -12,3 +12,9 @@ __pycache__/
 
 # Ignore other unnecessary files
 .DS_Store
+
+# Ignore node_modules directory in blockchain
+blockchain/node_modules/
+
+# Ignore ganache.db folder in blockchain
+blockchain/ganache.db/
